@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TABBATA-TIMER</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./app.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="./img/logo-2.svg" alt="логотип таймера" srcset="" />
+            </div>
+            <form class="timer" onsubmit="app.submit(event)">
+                <div class="info">
+                    Установить таймер на
+                    <input type="number" name="time" aria-label="число минут таймера" value="10" /> минут
+                </div>
+                <div class="countdown">
+                    <div class="num" id="min_tens">0</div>
+                    <div class="num" id="min">0</div>
+                    <div class="dots">:</div>
+                    <div class="num" id="sec_tens">0</div>
+                    <div class="num" id="sec">0</div>
+                </div>
+                <button type="submit" class="button">
+                    <img src="./img/play-btn.svg" alt="Иконка play" />
+                    Запустить таймер
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

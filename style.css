@@ -1,0 +1,106 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+:root {
+    --primary-color: #6c38cc;
+    --anti-accent: #7c7c8a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: #202024;
+    border-radius: 8px;
+    padding: 30px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.info {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.info input {
+    width: 40px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    color: var(--anti-accent);
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.info input::-webkit-outer-spin-button,
+.info input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* .info input[type='number'] {
+    -moz-appearance: textfield;
+} */
+.countdown {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.num {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: bold;
+    font-size: 160px;
+    line-height: 1;
+    background: #29292e;
+    width: 128px;
+    padding: 40px 16px;
+    border-radius: 8px;
+}
+.dots {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: bold;
+    font-size: 160px;
+    color: var(--primary-color);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    gap: 15px;
+    width: 648px;
+    height: 64px;
+    left: 408px;
+    top: 600px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    cursor: pointer;
+}
